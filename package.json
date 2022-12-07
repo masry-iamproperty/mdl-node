@@ -1,0 +1,15 @@
+{
+  "name": "db-tutorial",
+  "version": "1.0.0",
+  "description": "A simple testing for db connectivity using nodejs with knex",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohammed Almasry",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^2.3.0",
+    "mysql": "^2.18.1"
+  }
+}
