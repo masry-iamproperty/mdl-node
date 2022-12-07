@@ -1,12 +1,12 @@
-const knex = require('knex')({
-    client: 'mysql',
-    connection: {
-        host: '0.0.0.0',
-        port: 3306,
-        user: 'root',
-        password: 'password',
-        database: 'db'
-    }
+const http = require('node:http');
+const PORT = 3000;
+const server = http.createServer();
+
+server.on('request', (req, res) => {
+    res.writeHead(200, {'Content-Type': 'application/json'});
+    res.end(JSON.stringify({
+        message: 'Hello from NODE on EC2'
+    }));
 });
 
-console.log(knex);
+server.listen(PORT);
