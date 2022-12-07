@@ -10,3 +10,4 @@ server.on('request', (req, res) => {
 });
 
 server.listen(PORT);
+console.log(`app started listening on port ${PORT} ... press CTRL + C to quit.`);
